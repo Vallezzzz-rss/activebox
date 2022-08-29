@@ -1,0 +1,37 @@
+.activbox__navigation {
+    margin-top: 114px;
+    background-color: #353C65;
+    padding-bottom: 67px;
+}
+
+.navigation__items {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 71px;
+}
+.items__item{
+    max-width: 370px;
+}
+.navigation-item__title {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.navigation-item__text {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}

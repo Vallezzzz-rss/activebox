@@ -1,0 +1,116 @@
+.view {
+   height: 340px;
+
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   cursor: default;
+}
+
+.view .mask,
+.view .content {
+   width: 100%;
+   height: 340px;
+
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view img {
+   display: block;
+   position: relative;
+}
+
+.third-effect .mask {
+   opacity: 0;
+   overflow: visible;
+   background-color: rgba(255, 67, 67, 0.8);
+
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+
+.third-effect a.info {
+   position: relative;
+   top: -10px;
+
+   opacity: 0;
+
+   -webkit-transition: opacity 0.5s 0s ease-in-out;
+   -moz-transition: opacity 0.5s 0s ease-in-out;
+   -o-transition: opacity 0.5s 0s ease-in-out;
+   -ms-transition: opacity 0.5s 0s ease-in-out;
+   transition: opacity 0.5s 0s ease-in-out;
+}
+
+.third-effect:hover .mask {
+   opacity: 1;
+   background-color: rgba(255, 67, 67, 0.8);
+   &:active{
+      background: rgba(185, 12, 12, 0.8);
+   }
+}
+
+.third-effect:hover a.info {
+   opacity: 1;
+
+   -moz-transition-delay: 0.3s;
+   -webkit-transition-delay: 0.3s;
+   -o-transition-delay: 0.3s;
+   -ms-transition-delay: 0.3s;
+   transition-delay: 0.3s;
+}
+
+.mask__title {
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+
+   line-height: 28px;
+
+   text-align: center;
+   text-transform: uppercase;
+   margin: 0;
+   color: #FFFFFF;
+   padding-top: 20px;
+}
+
+.mask__text {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   padding: 0;
+   color: #FFFFFF;
+
+}
+
+.mask {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap:20px;
+}
+
+.main {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 341px);
+}
+
+.portfolio__container {
+   max-width: 1510px;
+   margin: 0 auto;
+   padding-top: 133px;
+}
