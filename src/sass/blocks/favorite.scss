@@ -17,31 +17,31 @@
 }
 
 .container__favorite-block {
-    padding-top: 157px;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1170px;
+    margin: 131px auto 0 auto;
+    @media (max-width:1024px){
+        margin: 156px auto 0 auto;
+    }
 }
 
 .favorite-block__title {
-    font-family: $font-text;
     font-style: normal;
     font-weight: 900;
     font-size: 64px;
     line-height: 75px;
-    display: flex;
-    align-items: center;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    @media (max-width:1024px){
+        font-size: 48px;
+        line-height: 56px;
+    }
 }
 
 .favorite-block__text {
-    font-family: $font-text;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-
-    line-height: 21px;
+    font-size: 24px;
 
     display: flex;
     align-items: center;
@@ -50,8 +50,15 @@
 
     color: #FFFFFF;
 
-    padding-top: 62px;
-    margin: 0 114px;
+   margin: 29px auto 0 auto;
+   max-width: 1000px;
+   @media (max-width:1024px){
+    font-size: 18px;
+    line-height: 21px;
+    margin: 62px auto 0 auto;
+    display: block;
+    padding: 0 110px 0 110px;
+   }
 }
 
 .favorite-block__button {
@@ -77,6 +84,10 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
+    @media(max-width:1024px){
+        min-width: 313px;
+        margin: 92px auto 0 auto;
+    }
 &:hover{
     background-color: #E71414;
     transition: background-color 1s;

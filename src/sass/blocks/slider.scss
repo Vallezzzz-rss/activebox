@@ -50,20 +50,22 @@
 }
 
 #slider_bl .slider-dot-control {
-    margin-top: 31px;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    margin-top: 33px;
     bottom: 0;
-    text-align: center
 }
 
 #slider_bl .slider-dot-control label {
     cursor: pointer;
-    margin-left: 25px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #7e5d6f;
     border-radius: 8px;
+    transition: all .3s;
     display: inline-block;
-    width: 14px;
-    height: 14px;
-    border: 1px solid #7E5D6F;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s
@@ -263,7 +265,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 39px;
 
 }
 
@@ -277,11 +278,10 @@
 
     color: #FFFFFF;
 
-    padding: 0px 145px 0px 129px;
+    padding: 0 122px 0 130px;
 }
 
 .subtext {
-    font-family: $font-text;
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
@@ -295,18 +295,17 @@
 
 .slide {
     display: grid;
-    grid-template-columns: 48% 52%;
+    grid-template-columns: 49% 52%;
 
 }
 
 .slider__title {
-    font-family: $font-text;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
 
-    margin: 139px auto 0 auto;
+    margin: 133px auto 0;
 
     text-align: center;
 
@@ -314,14 +313,16 @@
 }
 
 .title__subtext {
-    font-family: $font-text;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    margin: 33px auto 0 auto;
+    margin: 23px auto 0 auto;
     text-align: center;
     text-transform: uppercase;
 
     color: #000000;
+}
+.slider-button{
+    margin-top: 50px;
 }
